@@ -7,7 +7,7 @@ import Switch from './Switch'
 
 const Header = () => {
   return (
-    <div className=' flex justify-between items-center max-w-6xl mx-auto'>
+    <div className=' flex justify-between items-center max-w-6xl py-2 mx-auto'>
       <div className='flex gap-4'>
         <Menuitem title='Home' address='/' Icon={AiFillHome}/>
         <Menuitem title='About' address='/about' Icon={BsFillInfoCircleFill}/>
