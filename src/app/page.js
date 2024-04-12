@@ -1,5 +1,6 @@
 import React from 'react'
 const API_KEY = process.env.API_KEY
+import Result from '@/components/Result'
 
 const Home = async({searchParams}) => {
   const genre = searchParams.genre || 'fetchTrending'
@@ -13,7 +14,9 @@ const Home = async({searchParams}) => {
 
   console.log(result)
   return (
-    <div>Home</div>
+    <div>
+      <Result data={result}/>
+    </div>
   )
 }
 
