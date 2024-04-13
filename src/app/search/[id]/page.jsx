@@ -7,7 +7,7 @@ const SearchId = async({params}) => {
 
     const data = await res.json()
     const results = data.results;
-    console.log(results)
+    
 
   return (
     <div>

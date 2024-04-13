@@ -12,7 +12,7 @@ const Home = async({searchParams}) => {
 
   const result = data?.results
 
-  console.log(result)
+
   return (
     <div>
       <Result data={result}/>
