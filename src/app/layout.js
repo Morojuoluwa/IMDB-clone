@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Provider from "./Provider";
 import Navbar from "@/components/Navbar";
+import Boxx from "@/components/Boxx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} >
         <Provider>
+          <div className=" max-sm: sticky max-sm:top-0 max-sm: z-10 max-sm:dark:bg-gray-500 max-sm:bg-white">
           <Header/>
           <Navbar/>
+          <Boxx/>
+          </div>
+          
           {children}
         </Provider>
         </body>
